@@ -1,0 +1,95 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #222;
+  color: #fff;
+}
+.logo {
+  width: 60px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* LAYOUT */
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 15px;
+  padding: 15px;
+}
+.sidebar {
+  background: #f4f4f4;
+  padding: 15px;
+}
+.content {
+  background: #fff;
+  padding: 15px;
+}
+
+/* GALLERY */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+.grid-gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* CALENDARIO */
+.grid-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+.grid-calendar div {
+  background: #ddd;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
